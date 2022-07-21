@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <nav>
+                <ul class="nav navGo">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>News</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <img class="main-box p0 img-bx-shd" src="bgmi.jpg" alt="">
+        <div class="welcome main-box" style="cursor: pointer;" onclick="download()">
+            <div class="welcome-texts text-box">
+                <h1 style="font-family: 'Kanit', sans-serif; font-size: 150px;">Download</h1>
+            </div>
+        </div>
+        <div class="welcome main-box">
+            <div class="welcome-texts text-box">
+                <div class="hello-there top-head">Hello There!!</div>
+                <div class="welcome-to-website bot-head">Welcome to Axwaizee's website.</div>
+            </div>
+        </div>
+        <div class="about main-box">
+            <div class="about-me text-box">
+                <div class="this-is top-head">This is Axwaizee.</div>
+                <div class="the-legend bot-head">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function download() {
+            for (let i = 0; i < 5; i++) {
+                var a = document.createElement("a");
+                a.href = 'hi.txt';
+                a.setAttribute("download", `hi${i}.txt`);
+                a.click();
+            }
+        }
+    </script>
+</body>
+
+</html>

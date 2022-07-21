@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:ital,wght@1,700&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    /* background-color: rgb(255, 250, 183); */
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100vh; */
+}
+
+header{
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+header nav {
+    padding: 0 20px;
+    display: flex;
+}
+
+header img{
+    margin: 23px;
+}
+
+header ul li{
+    font-size: 23px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 16px 5px;
+    padding: 3px 13px 6px;
+    border-radius: 39px;
+}
+
+
+header ul li:hover, header ul li:active{
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    background-color: red;
+    color: black;
+}
+
+
+header ul a{
+    text-decoration: none;
+}
+
+header ul a:link, header ul a:visited{
+    text-decoration: none;
+    color: red;
+}
+
+header ul a:link, header ul a:visited{
+    text-decoration: none;
+}
+
+.main-box {
+    /* background-color: rgb(253, 148, 244); */
+    font-size: 35px;
+    margin: 50px auto;
+    padding: 80px;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    transition: box-shadow .2s;
+    border-radius: 9px;
+}
+
+.main-box:hover{
+    box-shadow: 4px 4px 17px;
+}
+
+.text-box{
+    margin: auto;
+}
+
+.top-head{
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+}
+
+.bot-head{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.img-bx-shd:hover{
+    box-shadow: 4px 4px 50px;
+}
+
+/* 
+.img-bx-shd:active{
+    box-shadow: 4px 4px 50px;
+} */
+
+.p0{
+    padding: 0;
+}
